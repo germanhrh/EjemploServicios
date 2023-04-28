@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.CrearUsuarioClienteUnicoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-09T00:32:17" hostname="MOEXTGHRIVERAH" time="30.935">
+  <properties/>
+  <testcase name="[1] 1, 8504631, 3017463878, 1000000, 3" classname="test.CrearUsuarioClienteUnicoTest" time="30.935"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://middlewareuat.falabella.cl/bco/co/12c/bus/Cliente/SolicitudAdmision/Generar/v1.0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/xml, text/xml, application/xhtml+xml
+				Accept-Encoding=gzip, deflate, br
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Header>
+      <ns1:ClientService xmlns:ns1="http://mdwcorp.falabella.com/common/schema/clientservice">
+         <ns1:country>CO</ns1:country>
+         <ns1:commerce>Banco</ns1:commerce>
+         <ns1:channel>Web</ns1:channel>
+         <ns1:storeId>76</ns1:storeId>
+      </ns1:ClientService>
+      <ns1:ClientServiceFIF xmlns:ns1="http://mdwcorp.falabella.com/common/schema/clientserviceFIF">
+         <ns1:usuario>1</ns1:usuario>
+         <ns1:sesion>fb5b2e48-6634-bdf4-880drreddd6b44DD4aab5-f44056</ns1:sesion>
+      </ns1:ClientServiceFIF>
+   </soap:Header>
+   <soap:Body>
+      <ns1:clienteSolicitudAdmisionGenerarExpReq xmlns:ns1="http://mdwcorp.falabella.com/FIF/CORP/OSB/schema/Cliente/SolicitudAdmision/Generar/Req-v2017.12">
+         <cliente>
+            <apellidoMaterno>Carrillo</apellidoMaterno>
+            <apellidoPaterno>Moreno</apellidoPaterno>
+            <estado>6</estado>
+            <fechaNacimiento>1980-09-08</fechaNacimiento>
+            <genero>2</genero>
+            <nacionalidad>2</nacionalidad>
+            <nombres>Jesus</nombres>
+            <tipoPersona>1</tipoPersona>
+            <documentoIdentidad>
+               <tipoDocumento>1</tipoDocumento>
+               <numeroDocumento>8504631</numeroDocumento>
+               <fechaExpedicion>1999-02-02</fechaExpedicion>
+            </documentoIdentidad>
+            <primerNombre>Jesus</primerNombre>
+            <segundoNombre>Maria</segundoNombre>
+            <estadoCivil>1</estadoCivil>
+            <lugarNacimiento>50001</lugarNacimiento>
+            <departamentoNacimiento>50000</departamentoNacimiento>
+            <empleadoFalabella>0</empleadoFalabella>
+            <informacionContacto>
+               <telefono>
+                  <codigoArea>3</codigoArea>
+                  <numeroTelefono>3017463878</numeroTelefono>
+                  <tipoTelefono>3</tipoTelefono>
+               </telefono>
+               <direccion>
+                  <codigoCiudad>11001</codigoCiudad>
+                  <codigoRegion>25000</codigoRegion>
+                  <direccionCompleta>calle 15 numero 10-39, BogotÃ¡, Cundinamarca, Colombia</direccionCompleta>
+                  <estrato>0</estrato>
+               </direccion>
+               <correoElectronico>
+                  <direccionCorreoElectronico>pruebagorest@gmail.com</direccionCorreoElectronico>
+               </correoElectronico>
+            </informacionContacto>
+            <informacionPersonal>
+               <numeroCargas>0</numeroCargas>
+               <profesion>12</profesion>
+               <referenciaCliente>
+                  <apellidoPaterno>rodriguez</apellidoPaterno>
+                  <nombres>luz marina</nombres>
+                  <primerNombre>luz</primerNombre>
+                  <segundoNombre>marina</segundoNombre>
+                  <codigoTipoParentesco>4</codigoTipoParentesco>
+                  <cliente>
+                     <informacionContacto>
+                        <telefono>
+                           <codigoArea>3</codigoArea>
+                           <numeroTelefono></numeroTelefono>
+                           <tipoTelefono>3</tipoTelefono>
+                        </telefono>
+                        <direccion>
+                           <codigoCiudad>50001</codigoCiudad>
+                           <codigoRegion>50000</codigoRegion>
+                        </direccion>
+                     </informacionContacto>
+                  </cliente>
+               </referenciaCliente>
+            </informacionPersonal>
+            <informacionFinancieraCliente>
+               <PEP>0</PEP>
+               <totalActivos>49000000</totalActivos>
+               <totalPasivos>45000000</totalPasivos>
+               <totalIngresos>4500000</totalIngresos>
+               <totalEgresos>1900000</totalEgresos>
+               <informacionAdicional>
+                  <monto>1000000</monto>
+               </informacionAdicional>
+      <transaccionesExtranjeras xmlns:v20="http://mdwcorp.falabella.com/schema/BCO/Finanzas/v2013.05">
+     <v20:aplicaResidenciaEEUU>true</v20:aplicaResidenciaEEUU>
+     <v20:aplicaPermanenciaEEUU>false</v20:aplicaPermanenciaEEUU>
+     <v20:aplicaTributacionPaisDiferente>true</v20:aplicaTributacionPaisDiferente>
+     <v20:paisTributacion>E.U</v20:paisTributacion>
+     <v20:identificacionTributaria>00000000</v20:identificacionTributaria>
+    </transaccionesExtranjeras>
+            </informacionFinancieraCliente>
+            <actividadLaboral>
+               <fechaCeseEmpleo>1900-01-01</fechaCeseEmpleo>
+               <descripcionCargo>docente</descripcionCargo>
+               <nombreEmpresa>secretaria educacion distrital</nombreEmpresa>
+               <direccionEmpresa>ie atanasio girardot</direccionEmpresa>
+               <clasificacionActividad>6</clasificacionActividad>
+               <telefono>
+                  <codigoArea>1</codigoArea>
+                  <numeroTelefono>122000</numeroTelefono>
+                  <tipoTelefono>1</tipoTelefono>
+               </telefono>
+               <tipoContrato>2</tipoContrato>
+            </actividadLaboral>
+         </cliente>
+         <contrato>
+            <diaPago>30</diaPago>
+         </contrato>
+         <producto>
+            <codigoProducto>3</codigoProducto>
+            <identificadorProducto>1</identificadorProducto>
+            <descripcionProducto>respaldar el credito con falabella</descripcionProducto>
+            <limiteBanco>
+               <valorMaximoOperacion>10000000</valorMaximoOperacion>
+            </limiteBanco>
+            <limiteCliente>
+               <valorMaximoOperacion>100000</valorMaximoOperacion>
+            </limiteCliente>
+            <estadoProducto>0</estadoProducto>
+         </producto>
+      </ns1:clienteSolicitudAdmisionGenerarExpReq>
+   </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+Date: Sat, 09 Oct 2021 00:32:20 GMT
+Server: 
+Content-Length: 661
+X-ORACLE-DMS-ECID: 005nU2WyR5nDkZc5Tj^Ayc0001Jg0F4Y1W
+X-ORACLE-DMS-RID: 0:1
+Keep-Alive: timeout=5, max=600
+Connection: Keep-Alive
+Content-Type: text/xml; charset=utf-8
+Content-Language: en
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <ns2:clienteSolicitudAdmisionGenerarExpResp xmlns:ns2="http://mdwcorp.falabella.com/FIF/CORP/OSB/schema/Cliente/SolicitudAdmision/Generar/Resp-v2017.12">
+      <estadoOperacion>
+        <codigoOperacion>200</codigoOperacion>
+        <glosaOperacion>EJECUCION EXITOSA</glosaOperacion>
+      </estadoOperacion>
+      <solicitud>
+        <numeroSolicitud>20023391</numeroSolicitud>
+      </solicitud>
+      <producto>
+        <codigoSubProducto>99</codigoSubProducto>
+      </producto>
+    </ns2:clienteSolicitudAdmisionGenerarExpResp>
+  </soap:Body>
+</soapenv:Envelope>
+Request method:	POST
+Request URI:	http://middlewareuat.falabella.cl/bco/co/12c/bus/Cliente/InformacionGeneral/Generar/v1.0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/xml, text/xml, application/xhtml+xml
+				Accept-Encoding=gzip, deflate, br
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cli="http://mdwcorp.falabella.com/common/schema/clientserviceFIF" xmlns:cli1="http://mdwcorp.falabella.com/common/schema/clientservice" xmlns:req="http://mdwcorp.falabella.com/FIF/CORP/OSB/schema/Cliente/InformacionGeneral/Generar/Req-v2017.05">
+   <soapenv:Header>
+      <cli1:ClientService>
+         <cli1:country>CO</cli1:country>
+         <cli1:commerce>Banco</cli1:commerce>
+         <cli1:channel>Web</cli1:channel>
+      </cli1:ClientService>
+      <cli:ClientServiceFIF/>
+   </soapenv:Header>
+   <soapenv:Body>
+      <req:clienteInformacionGeneralGenerarExpReq>
+         <atributoFlexible>
+            <nombreAtributo>IdAdmision</nombreAtributo>
+            <valorAtributo>20023391</valorAtributo>
+         </atributoFlexible>
+      </req:clienteInformacionGeneralGenerarExpReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+HTTP/1.1 200 OK
+Date: Sat, 09 Oct 2021 00:32:33 GMT
+Server: 
+Content-Length: 589
+X-ORACLE-DMS-ECID: 005nU2Xiet0DkZc5Tj^Ayc0001Jg0F4Y4P
+X-ORACLE-DMS-RID: 0:1
+Keep-Alive: timeout=5, max=600
+Connection: Keep-Alive
+Content-Type: text/xml; charset=utf-8
+Content-Language: en
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns2:clienteInformacionGeneralGenerarExpResp xmlns:ns2="http://mdwcorp.falabella.com/FIF/CORP/OSB/schema/Cliente/InformacionGeneral/Generar/Resp-v2017.05">
+      <estadoOperacion>
+        <codigoOperacion>0</codigoOperacion>
+        <glosaOperacion/>
+      </estadoOperacion>
+      <cliente>
+        <contrato>
+          <identificadorCliente>
+            <identificadorCliente>4749833</identificadorCliente>
+          </identificadorCliente>
+        </contrato>
+      </cliente>
+    </ns2:clienteInformacionGeneralGenerarExpResp>
+  </soapenv:Body>
+</soapenv:Envelope>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
